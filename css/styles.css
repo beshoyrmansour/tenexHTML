@@ -1,0 +1,319 @@
+html,
+body {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 17.99px;
+}
+:root {
+  --font-family-sans-serif: "Open Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.h-auto {
+  height: auto;
+}
+.over_flow_image_left {
+  position: absolute;
+  left: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+.experience-container {
+  /* background-color: aqua; */
+  position: relative;
+  z-index: 1;
+  background-color: #f3f6f8;
+  overflow: hidden;
+}
+.experience-container:before {
+  /* content: " "; */
+  /* border-left: 32.5vw solid #00aeef;
+    background-color: #00aeef;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 80%; */
+}
+.experience-container .screenshot-wrapper:before {
+  content: " ";
+  background-color: #00aeef;
+  position: absolute;
+  height: 150%;
+  width: 50%;
+  top: 0px;
+  left: 50%;
+  z-index: -1;
+  overflow: hidden;
+  border-left: 32.5vw solid #00aeef;
+}
+.tnx-btn {
+  border-radius: 2rem;
+  padding: 0.6rem 1.7rem;
+}
+.tnx-btn-accent {
+  border-radius: 2rem;
+  padding: 0.6rem 1.7rem;
+  background-color: #ff6600;
+  border-color: #ff6600;
+  color: #fff;
+}
+.tnx-btn-accent:hover {
+  border-radius: 2rem;
+  padding: 0.6rem 1.7rem;
+  background-color: #f57621;
+  border-color: #f57621;
+  color: #fff;
+}
+.tnx-btn-primary {
+  border-radius: 2rem;
+  padding: 0.6rem 1.7rem;
+  background-color: #00aeef;
+  border-color: #00aeef;
+
+  color: #fff;
+}
+.tnx-btn-primary:hover {
+  border-radius: 2rem;
+  padding: 0.6rem 1.7rem;
+  background-color: #3ac9ff;
+  border-color: #3ac9ff;
+
+  color: #fff;
+}
+.features_list_container {
+  /* min-height: 40rem; */
+  background-image: url("../images/tenex_features_bg.png");
+  /* background-size: initial; */
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 6rem 0px;
+  overflow: hidden;
+}
+
+.features_list_container .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* top: 3.5rem; */
+}
+.features_list_container .carousel-indicators .active {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.testimonials-list {
+  position: relative;
+  overflow-x: scroll;
+  width: 63vw;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-card {
+  position: relative;
+  display: inline-block;
+  width: 18rem;
+  min-width: 18rem;
+  box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.175) !important;
+}
+
+footer {
+  background-color: #1c1c1c;
+  overflow: hidden;
+}
+ul.footer-nav-list {
+  list-style: none;
+}
+ul.footer-nav-list li a {
+  color: white;
+}
+
+ul.footer-contact-list {
+  list-style: none;
+}
+ul.footer-contact-list li a {
+  color: white;
+}
+
+ul.footer-social-list li a {
+  font-size: 1.1rem;
+  color: #777777;
+}
+
+ul.footer-terms-list {
+  list-style: none;
+  z-index: 2;
+}
+ul.footer-terms-list li a {
+  color: white;
+}
+
+.bg-light-grey {
+  background-color: #2b2b2b;
+  z-index: 1;
+}
+.bg-light-grey::before {
+  content: " ";
+  height: 500rem;
+  width: 500rem;
+  background-color: #2b2b2b;
+  position: absolute;
+  display: block;
+  /* bottom: 50px; */
+  top: -5rem;
+  left: 0px;
+  z-index: -1;
+}
+
+ul.about-list {
+  list-style-image: url(../images/mark.png);
+}
+
+li.about-block h5 {
+  color: #00aeef;
+}
+.help-block-title {
+  color: #00aeef;
+}
+
+/* li.about-block h6{
+font-weight: bold;
+} */
+.help-container {
+  /* min-height: 40rem; */
+  background-image: url("../images/who_we_help_man_desktop.jpg");
+  /* background-size: initial; */
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 6rem 0px;
+  overflow: hidden;
+}
+.tnx-title {
+  color: #00aeef;
+}
+.tnx-bg-odd {
+  background: #f3f6f8;
+}
+@media (max-width: 575.98px) {
+  .experience-container:before {
+    content: " ";
+    background-color: #f3f6f8;
+    border-right: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+  }
+
+  .slider-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 20px 5px;
+    color: #3c376f;
+    font-size: 2rem;
+  }
+
+  .slider-button span {
+    position: relative;
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .previous:hover span {
+    transform: translateX(-10px) scale(1.2);
+  }
+
+  .next:hover span {
+    transform: translateX(10px) scale(1.2);
+  }
+
+  .slider-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-nav li {
+    display: flex;
+    flex: 2;
+    text-align: center;
+  }
+
+  .feedback_item {
+    max-width: 100%;
+    display: none;
+  }
+
+  .feedback_item.active {
+    display: block;
+    animation: fadeFeatureItem 0.8s;
+  }
+
+  .slider-nav .arrow {
+    flex: 0 0 15%;
+  }
+
+  .slider-nav a {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .slider-nav span {
+    display: block;
+    width: 100%;
+  }
+
+  @keyframes fadeFeatureItem {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  .testimonials-list {
+    position: relative;
+    overflow-x: scroll;
+    width: 90vw;
+  }
+  .bg-light-grey {
+    padding-top: 2rem;
+  }
+  .bg-light-grey::before {
+    content: " ";
+    height: 500rem;
+    width: 500rem;
+    background-color: #2b2b2b;
+    position: absolute;
+    display: block;
+    /* bottom: 50px; */
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  .help-container {
+    /* min-height: 40rem; */
+    background-image: url("../images/who_we_help_mobile.jpg");
+    /* background-size: initial; */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: scroll;
+    padding: 6rem 0px;
+    padding-bottom: 40rem;
+    overflow: hidden;
+    background-size: auto 45rem;
+  }
+  .about-photo img {
+    width: 100%;
+    padding: 0px 30px;
+  }
+}
