@@ -59,8 +59,8 @@ body {
 .tnx-btn-accent:hover {
   border-radius: 2rem;
   padding: 0.6rem 1.7rem;
-  background-color: #f57621;
-  border-color: #f57621;
+  background-color: #d95700;
+  border-color: #d95700;
   color: #fff;
 }
 .tnx-btn-primary {
@@ -74,8 +74,8 @@ body {
 .tnx-btn-primary:hover {
   border-radius: 2rem;
   padding: 0.6rem 1.7rem;
-  background-color: #3ac9ff;
-  border-color: #3ac9ff;
+  background-color: #018dc2;
+  border-color: #018dc2;
 
   color: #fff;
 }
