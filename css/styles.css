@@ -192,6 +192,18 @@ font-weight: bold;
 .tnx-bg-odd {
   background: #f3f6f8;
 }
+
+.benefits-container .benefits-item .benefits-item-text {
+
+}
+
+.value-item-text{
+  
+}
+
+/*
+
+*/
 @media (max-width: 575.98px) {
   .experience-container:before {
     content: " ";
