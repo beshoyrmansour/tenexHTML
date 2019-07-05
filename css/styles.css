@@ -21,6 +21,15 @@ body {
   margin: 0px;
   width: 100%;
 }
+
+.top-nav-logo {
+  width: auto;
+  height: 30px;
+}
+.footer-logo {
+  width: 130px;
+  height: 130px;
+}
 .experience-container {
   /* background-color: aqua; */
   position: relative;
@@ -237,7 +246,6 @@ section#about_us_page {
   }
   .testimonial-card {
     width: 300px;
-
   }
   .bg-light-grey {
     padding-top: 2rem;
