@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   /* font-family: 'Open Sans', sans-serif; */
@@ -33,6 +37,7 @@ body {
     width: 20%;
     left: 80%; */
 }
+
 .experience-container .screenshot-wrapper:before {
   content: " ";
   background-color: #00aeef;
@@ -99,22 +104,25 @@ body {
 .features_list_container .carousel-indicators .active {
   background-color: rgba(0, 0, 0, 0.9);
 }
-
-.testimonials-list {
-  position: relative;
-  overflow-x: scroll;
-  width: 63vw;
-  -webkit-overflow-scrolling: touch;
+.feadback_container {
+  /* overflow: hidden; */
 }
-
+#testimonials.slick-slider .slick-list {
+  padding: 2rem 0px 3rem 2rem;
+  /* height: 21rem; */
+  /* overflow: hidden; */
+}
 .testimonial-card {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   width: 18rem;
   min-width: 18rem;
   box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.175) !important;
 }
-
+.slick-disabled,
+.slick-disabled:focus {
+  color: #777777;
+}
 footer {
   background-color: #1c1c1c;
   overflow: hidden;
@@ -194,16 +202,21 @@ font-weight: bold;
 }
 
 .benefits-container .benefits-item .benefits-item-text {
-
 }
 
-.value-item-text{
-  
+.value-item-text {
 }
-
+section#home_page,
+section#platform_page,
+section#solutions_page,
+section#who_we_help_page,
+section#about_us_page {
+  padding: 4rem 0px;
+}
 /*
 
 */
+
 @media (max-width: 575.98px) {
   .experience-container:before {
     content: " ";
@@ -214,88 +227,17 @@ font-weight: bold;
     width: 100%;
     top: 0px;
   }
-
-  .slider-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 20px 5px;
-    color: #3c376f;
-    font-size: 2rem;
+  .slick-arrows {
+    justify-content: space-around;
   }
-
-  .slider-button span {
-    position: relative;
-    display: inline-block;
-    transform: translateX(0);
-    transition: transform 0.3s ease;
+  #testimonials.slick-slider .slick-list {
+    padding: 2rem 0px 3rem 0.3px;
+    /* height: 21rem; */
+    /* overflow: hidden; */
   }
+  .testimonial-card {
+    width: 300px;
 
-  .previous:hover span {
-    transform: translateX(-10px) scale(1.2);
-  }
-
-  .next:hover span {
-    transform: translateX(10px) scale(1.2);
-  }
-
-  .slider-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .slider-nav li {
-    display: flex;
-    flex: 2;
-    text-align: center;
-  }
-
-  .feedback_item {
-    max-width: 100%;
-    display: none;
-  }
-
-  .feedback_item.active {
-    display: block;
-    animation: fadeFeatureItem 0.8s;
-  }
-
-  .slider-nav .arrow {
-    flex: 0 0 15%;
-  }
-
-  .slider-nav a {
-    flex-basis: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  .slider-nav span {
-    display: block;
-    width: 100%;
-  }
-
-  @keyframes fadeFeatureItem {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-  .testimonials-list {
-    position: relative;
-    overflow-x: scroll;
-    width: 90vw;
   }
   .bg-light-grey {
     padding-top: 2rem;
